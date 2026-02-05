@@ -13,6 +13,14 @@ export default function CreateDealPage() {
 
   async function handleCreate() {
   try {
+
+if (!ethers.isAddress(athlete)) {
+  throw new Error("Invalid athlete address");
+}
+
+if (!ethers.isAddress(brand)) {
+  throw new Error("Invalid brand address");
+}
     if (!file) throw new Error("Please upload a contract file");
 
     setStatus("Hashing contract...");
