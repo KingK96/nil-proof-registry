@@ -29,3 +29,20 @@ export async function getWriteContract() {
 
   return new ethers.Contract(CONTRACT_ADDRESS, abi, signer);
 }
+
+export async function getSigner() {
+  const w = window as any;
+  if (!w.ethereum) throw new Error("MetaMask not found");
+
+  const provider = new ethers.BrowserProvider(w.ethereum);
+  const network = await provider.getNetwork();
+
+  // local hardhat only
+  if (Number(network.chainId) !== 31337) {
+    throw new Error("Please switch MetaMask to Localhost 8545");
+  }
+
+  await provider.send("eth_requestAccounts", []);
+  return await provider.getSigner();
+}
+

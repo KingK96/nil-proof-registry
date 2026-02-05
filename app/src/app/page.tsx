@@ -1,9 +1,6 @@
-// src/app/page.tsx
-export default function Home() {
-  return (
-    <main>
-      <h1>NIL Deal Registry</h1>
-      <p>Local development is working.</p>
-    </main>
-  );
-}
+
+// app/src/app/page.tsx
+import { redirect } from "next/navigation";
+export default function Home() { redirect("/create"); }
+
+

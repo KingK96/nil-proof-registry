@@ -8,6 +8,8 @@ __turbopack_context__.v([{"inputs":[],"stateMutability":"nonpayable","type":"con
 __turbopack_context__.s([
     "getReadContract",
     ()=>getReadContract,
+    "getSigner",
+    ()=>getSigner,
     "getWriteContract",
     ()=>getWriteContract
 ]);
@@ -38,6 +40,18 @@ async function getWriteContract() {
     await provider.send("eth_requestAccounts", []);
     const signer = await provider.getSigner();
     return new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ethers$2f$lib$2e$esm$2f$ethers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__ethers$3e$__["ethers"].Contract(CONTRACT_ADDRESS, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$NILDealRegistry$2e$abi$2e$json__$28$json$29$__["default"], signer);
+}
+async function getSigner() {
+    const w = window;
+    if (!w.ethereum) throw new Error("MetaMask not found");
+    const provider = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ethers$2f$lib$2e$esm$2f$ethers$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__ethers$3e$__["ethers"].BrowserProvider(w.ethereum);
+    const network = await provider.getNetwork();
+    // local hardhat only
+    if (Number(network.chainId) !== 31337) {
+        throw new Error("Please switch MetaMask to Localhost 8545");
+    }
+    await provider.send("eth_requestAccounts", []);
+    return await provider.getSigner();
 }
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
