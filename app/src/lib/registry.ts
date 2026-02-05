@@ -14,12 +14,16 @@ export function getReadContract() {
 }
 
 export async function getWriteContract() {
-  if (!CONTRACT_ADDRESS) throw new Error("Missing NEXT_PUBLIC_CONTRACT_ADDRESS");
-
   const w = window as any;
-  if (!w.ethereum) throw new Error("No injected wallet found (install MetaMask)");
+  if (!w.ethereum) throw new Error("MetaMask not found");
 
   const provider = new ethers.BrowserProvider(w.ethereum);
+  const network = await provider.getNetwork();
+
+  if (network.chainId !== 31337n) {
+    throw new Error("Please switch MetaMask to Localhost 8545");
+  }
+
   await provider.send("eth_requestAccounts", []);
   const signer = await provider.getSigner();
 

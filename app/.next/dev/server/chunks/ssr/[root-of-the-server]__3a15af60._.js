@@ -1,0 +1,251 @@
+module.exports = [
+"[externals]/next/dist/compiled/next-server/app-page-turbo.runtime.dev.js [external] (next/dist/compiled/next-server/app-page-turbo.runtime.dev.js, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("next/dist/compiled/next-server/app-page-turbo.runtime.dev.js", () => require("next/dist/compiled/next-server/app-page-turbo.runtime.dev.js"));
+
+module.exports = mod;
+}),
+"[externals]/node:crypto [external] (node:crypto, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("node:crypto", () => require("node:crypto"));
+
+module.exports = mod;
+}),
+"[externals]/crypto [external] (crypto, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("crypto", () => require("crypto"));
+
+module.exports = mod;
+}),
+"[externals]/http [external] (http, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("http", () => require("http"));
+
+module.exports = mod;
+}),
+"[externals]/https [external] (https, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("https", () => require("https"));
+
+module.exports = mod;
+}),
+"[externals]/zlib [external] (zlib, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("zlib", () => require("zlib"));
+
+module.exports = mod;
+}),
+"[externals]/events [external] (events, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("events", () => require("events"));
+
+module.exports = mod;
+}),
+"[externals]/net [external] (net, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("net", () => require("net"));
+
+module.exports = mod;
+}),
+"[externals]/tls [external] (tls, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("tls", () => require("tls"));
+
+module.exports = mod;
+}),
+"[externals]/stream [external] (stream, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("stream", () => require("stream"));
+
+module.exports = mod;
+}),
+"[externals]/url [external] (url, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("url", () => require("url"));
+
+module.exports = mod;
+}),
+"[externals]/buffer [external] (buffer, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("buffer", () => require("buffer"));
+
+module.exports = mod;
+}),
+"[project]/src/lib/registry.ts [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+const e = new Error("Could not parse module '[project]/src/lib/registry.ts'\n\nExpected ';', '}' or <eof>");
+e.code = 'MODULE_UNPARSABLE';
+throw e;
+}),
+"[project]/src/app/create/page.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>CreateDealPage
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ethers$2f$lib$2e$esm$2f$ethers$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__ethers$3e$__ = __turbopack_context__.i("[project]/node_modules/ethers/lib.esm/ethers.js [app-ssr] (ecmascript) <export * as ethers>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$registry$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/registry.ts [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+function CreateDealPage() {
+    const [athlete, setAthlete] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    const [brand, setBrand] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    const [dealType, setDealType] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("sponsorship");
+    const [file, setFile] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [status, setStatus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    async function handleCreate() {
+        try {
+            if (!file) throw new Error("Please upload a contract file");
+            setStatus("Hashing contract...");
+            const bytes = new Uint8Array(await file.arrayBuffer());
+            const contractHash = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ethers$2f$lib$2e$esm$2f$ethers$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__ethers$3e$__["ethers"].keccak256(bytes);
+            const contract = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$registry$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getWriteContract"])();
+            const now = Math.floor(Date.now() / 1000);
+            const end = now + 60 * 60 * 24 * 30; // +30 days
+            setStatus("Simulating call...");
+            await contract.registerDeal.staticCall(athlete, brand, contractHash, "nil://local/demo", dealType, now, end);
+            setStatus("Sending transaction...");
+            const tx = await contract.registerDeal(athlete, brand, contractHash, "nil://local/demo", dealType, now, end);
+            setStatus("Waiting for confirmation...");
+            const receipt = await tx.wait();
+            const event = receipt.logs.find((l)=>l.fragment?.name === "DealRegistered");
+            const dealId = event?.args?.dealId?.toString();
+            setStatus(`✅ Deal created! dealId = ${dealId}`);
+        } catch (e) {
+            setStatus(`❌ ${e.message}`);
+        }
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                children: "Create NIL Deal"
+            }, void 0, false, {
+                fileName: "[project]/src/app/create/page.tsx",
+                lineNumber: 64,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                children: [
+                    "Athlete Address",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        value: athlete,
+                        onChange: (e)=>setAthlete(e.target.value)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/create/page.tsx",
+                        lineNumber: 68,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/create/page.tsx",
+                lineNumber: 66,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                fileName: "[project]/src/app/create/page.tsx",
+                lineNumber: 71,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                children: [
+                    "Brand Address",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        value: brand,
+                        onChange: (e)=>setBrand(e.target.value)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/create/page.tsx",
+                        lineNumber: 75,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/create/page.tsx",
+                lineNumber: 73,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                fileName: "[project]/src/app/create/page.tsx",
+                lineNumber: 78,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                children: [
+                    "Deal Type",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        value: dealType,
+                        onChange: (e)=>setDealType(e.target.value)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/create/page.tsx",
+                        lineNumber: 82,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/create/page.tsx",
+                lineNumber: 80,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                fileName: "[project]/src/app/create/page.tsx",
+                lineNumber: 85,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                children: [
+                    "Contract File",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        type: "file",
+                        onChange: (e)=>setFile(e.target.files?.[0] || null)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/create/page.tsx",
+                        lineNumber: 89,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/create/page.tsx",
+                lineNumber: 87,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                fileName: "[project]/src/app/create/page.tsx",
+                lineNumber: 92,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                fileName: "[project]/src/app/create/page.tsx",
+                lineNumber: 93,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                onClick: handleCreate,
+                children: "Create Deal"
+            }, void 0, false, {
+                fileName: "[project]/src/app/create/page.tsx",
+                lineNumber: 95,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                children: status
+            }, void 0, false, {
+                fileName: "[project]/src/app/create/page.tsx",
+                lineNumber: 97,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/app/create/page.tsx",
+        lineNumber: 63,
+        columnNumber: 5
+    }, this);
+}
+}),
+];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__3a15af60._.js.map
