@@ -114,7 +114,9 @@ NEXT_PUBLIC_CONTRACT_ADDRESS=0xYOUR_DEPLOYED_ADDRESS
 cd app
 npm run dev
 
-MetaMask setup
+---
+
+## MetaMask setup
 
 Add network: Localhost 8545
 
@@ -128,7 +130,8 @@ Import a Hardhat test account private key (from Hardhat node output)
 
 Connect MetaMask to http://localhost:3000
 
-Security Notes
+---
+## Security Notes
 
 This MVP is intended for local/testnet demos only.
 
@@ -143,7 +146,3 @@ encryption / access controls for metadata
 role-based permissions (school compliance, athlete agent, etc.)
 
 optional counterparty signatures (wallet or traditional e-sign attestation)
-
-
-
-
