@@ -113,36 +113,3 @@ NEXT_PUBLIC_CONTRACT_ADDRESS=0xYOUR_DEPLOYED_ADDRESS
 ### 5) Run the app
 cd app
 npm run dev
-
----
-
-## MetaMask setup
-
-Add network: Localhost 8545
-
-RPC: http://127.0.0.1:8545
-
-Chain ID: 31337
-
-Currency: ETH
-
-Import a Hardhat test account private key (from Hardhat node output)
-
-Connect MetaMask to http://localhost:3000
-
----
-## Security Notes
-
-This MVP is intended for local/testnet demos only.
-
-Do not commit .env files or private keys.
-
-Uploaded files are hashed locally; they are not sent to a backend server in this MVP.
-
-Production version should include:
-
-encryption / access controls for metadata
-
-role-based permissions (school compliance, athlete agent, etc.)
-
-optional counterparty signatures (wallet or traditional e-sign attestation)
