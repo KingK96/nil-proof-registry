@@ -88,3 +88,32 @@ npm install
 # app
 cd ../app
 npm install
+
+### 2) Start blockchain in Terminal A
+
+cd contracts
+npx hardhat node
+
+### 2) Deploy contract in Terminal B
+cd contracts
+npx hardhat console --network localhost
+
+Inside terminal:
+
+const Factory = await ethers.getContractFactory("NILDealRegistry");
+const c = await Factory.deploy();
+await c.waitForDeployment();
+await c.getAddress();
+
+### 4) Place this in your .env/local file
+
+NEXT_PUBLIC_RPC_URL=http://127.0.0.1:8545
+NEXT_PUBLIC_CONTRACT_ADDRESS=0xYOUR_DEPLOYED_ADDRESS
+
+### 5) Run the app
+cd app
+npm run dev
+
+
+
+
