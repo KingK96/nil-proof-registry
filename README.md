@@ -94,7 +94,7 @@ npm install
 cd contracts
 npx hardhat node
 
-### 2) Deploy contract in Terminal B
+### 3) Deploy contract in Terminal B
 cd contracts
 npx hardhat console --network localhost
 
